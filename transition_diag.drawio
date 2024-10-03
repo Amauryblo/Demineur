@@ -124,14 +124,14 @@
         <mxCell id="QJIaIxEei0nV1tdBVm6X-44" value="place hint on the square" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="510" y="1340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QJIaIxEei0nV1tdBVm6X-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QJIaIxEei0nV1tdBVm6X-44">
+        <mxCell id="QJIaIxEei0nV1tdBVm6X-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QJIaIxEei0nV1tdBVm6X-44" target="QJIaIxEei0nV1tdBVm6X-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-470" y="960" as="sourcePoint" />
             <mxPoint x="520" y="710" as="targetPoint" />
             <Array as="points">
               <mxPoint x="570" y="1540" />
               <mxPoint x="1180" y="1540" />
-              <mxPoint x="1180" y="710" />
+              <mxPoint x="1180" y="490" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -147,18 +147,18 @@
             <mxPoint x="480" y="1140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QJIaIxEei0nV1tdBVm6X-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="QJIaIxEei0nV1tdBVm6X-49">
+        <mxCell id="QJIaIxEei0nV1tdBVm6X-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QJIaIxEei0nV1tdBVm6X-49" target="QJIaIxEei0nV1tdBVm6X-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="720" y="1230" as="sourcePoint" />
             <mxPoint x="520" y="710" as="targetPoint" />
             <Array as="points">
               <mxPoint x="1090" y="1210" />
-              <mxPoint x="1090" y="790" />
+              <mxPoint x="1090" y="570" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="QJIaIxEei0nV1tdBVm6X-52" value="You win !" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="780" y="520" width="60" height="30" as="geometry" />
+          <mxGeometry x="767" y="600" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
