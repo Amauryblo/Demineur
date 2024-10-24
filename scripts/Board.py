@@ -22,16 +22,37 @@ class Grille_facile:
         for ligne in self.grille:
             print(' '.join(map(str, ligne)))
     
-            
-    
-
-    def GenerateMine(self, nombre, valeur):
+    def GenerateMine(self, nombre):
 
         indices = [(i, j) for i in range(self.lignes) for j in range(self.colonnes)]
         cellules_choisies = random.sample(indices, nombre)
         
         for (i, j) in cellules_choisies:
-            self.grille[i][j].Cell.Cell().put_mine
+            self.grille[i][j].put_mine()
+    
+    
+    
+    
+    def GenerateHint(self):
+        
+        for i in range(self.lignes):
+            for j in range(self.colonnes):
+                if not self.grille[i][j].bomb:  # On ne calcule pas l'indice pour les bombes
+                    self.grille[i][j].hint = self.Getneighbors(i, j)
+
+    def Getneighbors(self, ligne, colonne):
+        
+        bombes = 0
+        # Parcours des 8 cellules voisines (et vérification des bords)
+        for x in range(ligne - 1, ligne + 2):
+            for y in range(colonne - 1, colonne + 2):
+                if 0 <= x < self.lignes and 0 <= y < self.colonnes:  # Vérifie si on est dans les limites
+                    if self.grille[x][y].bomb:  # Si la cellule est une bombe
+                        bombes += 1
+        return bombes
+
+                    
+                    
 
 # Exemple d'utilisation
 grille = Grille_facile()
@@ -39,8 +60,32 @@ grille.afficher()
 
 # Modifier une case
 
-
+grille.GenerateMine(10)
+grille.GenerateHint()
 
 # Afficher à nouveau après modification
 print("\nAprès modification :")
 grille.afficher()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

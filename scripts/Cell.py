@@ -7,15 +7,16 @@ Created on Thu Oct 24 12:19:04 2024
 
 class Cell:
     
-    def __init__(self, revealled=False, bomb=False, flag=False):
+    def __init__(self, revealed=False, bomb=False, flag=False, hint=0):
         """Initialise une cellule avec une valeur par défaut (0)."""
-        self.revealled = False
-        self.bomb = False
-        self.flag = False
+        self.revealed = revealed
+        self.bomb = bomb
+        self.flag = flag
+        self.hint = hint
     
     def __repr__(self):
         """Affiche la valeur de la cellule lorsqu'on l'affiche."""
-        return str(self.revealled) +  str(self.bomb) + str(self.flag)
+        return str(self.revealed) +  str(self.bomb) + str(self.flag) + str(self.hint)
     
     def reveal (self):
         self.valeur = True
@@ -29,6 +30,8 @@ class Cell:
     
     def remove_flag (self):
         self.flag = False
+    
+    
         
         
     
