@@ -16,19 +16,21 @@ class Cell:
     
     def __repr__(self):
         """Affiche la valeur de la cellule lorsqu'on l'affiche."""
-        return str(self.revealed) +  str(self.bomb) + str(self.flag) + str(self.hint)
+        return str(self.revealed)
+        # return str(self.revealed) +  str(self.bomb) + str(self.flag) + str(self.hint)
     
-    def reveal (self):
-        self.valeur = True
+    def reveal(self):
+        """modifie les attributs"""
+        self.revealed = True
         
-    def put_mine (self):
+    def put_mine(self):
         self.bomb = True
     
-    def put_flag (self):
+    def put_flag(self):
         self.flag = True
     
     
-    def remove_flag (self):
+    def remove_flag(self):
         self.flag = False
     
     
